@@ -1,0 +1,6 @@
+﻿<configuration>
+  <appSettings>
+    <add key="DBOP" value="xAWxSSMMVyb7VKgbLV/CodpuMiJ1baCzM+kzmMlwrbeOTqlHkCamrJjKmJjazNgI" />
+    <add key="DBOP_Readonly" value="xAWxSSMMVyb7VKgbLV/CoUsZsmaeD5beCVWeUnEbBMwlmQNhTJEPyZsiXMKoIlW0" />
+  </appSettings>
+</configuration>

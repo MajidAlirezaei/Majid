@@ -1,0 +1,2 @@
+C:\Users\0064708934\source\repos\WebApplication1\ConsoleApp1\obj\Debug\netcoreapp3.1\Fakes\sge\o\netcoreapp3.1\f.csprojAssemblyReference.cache
+C:\Users\0064708934\source\repos\WebApplication1\ConsoleApp1\obj\Debug\netcoreapp3.1\Fakes\sge\o\netcoreapp3.1\f.csproj.CoreCompileInputs.cache
