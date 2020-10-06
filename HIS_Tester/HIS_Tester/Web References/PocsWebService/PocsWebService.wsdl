@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://LocalHost/RWSepas02/WebServices" xmlns:s1="http://thrita.behdasht.gov.ir/VM/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://LocalHost/RWSepas02/WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://LocalHost/RWSepas02/WebServices">
+      <s:import namespace="http://thrita.behdasht.gov.ir/VM/" />
+      <s:element name="NeedBirthDateOnEstelam">
+        <s:complexType />
+      </s:element>
+      <s:element name="NeedBirthDateOnEstelamResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="NeedBirthDateOnEstelamResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHealthCarePorviderInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHealthCarePorviderInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHealthCarePorviderInfoResult" type="s1:HealthcareProviderVO" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceListByNationalCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="identificationCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="practitionerProviderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInsuranceListByNationalCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetInsuranceListByNationalCodeResult" type="tns:ArrayOfInsuranceInquiryVO" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInsuranceInquiryVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InsuranceInquiryVO" nillable="true" type="s1:InsuranceInquiryVO" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetHIDByNationalCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nationalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="practitionerProviderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InquiryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ReferralID" type="s1:DO_IDENTIFIER" />
+            <s:element minOccurs="0" maxOccurs="1" name="insurer" type="s1:DO_CODED_TEXT" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHIDByNationalCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHIDByNationalCodeResult" type="s1:DO_IDENTIFIER" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminateHID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nationalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="reason" type="s1:DO_CODED_TEXT" />
+            <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminateHIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EliminateHIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateHID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nationalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="practitionerProviderId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hidInsurerType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateHIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateHIDResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyHIDStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nationalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyHIDStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyHIDStatusResult" type="s1:DO_CODED_TEXT" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonByNationalCodeAndBirthDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nationalCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="birthDate" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonByNationalCodeAndBirthDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPersonByNationalCodeAndBirthDateResult" type="s1:PersonVO" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonByNationalCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NationalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonByNationalCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPersonByNationalCodeResult" type="s1:PersonVO" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateBatchHID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hidInsurerType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="count" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="checkLowLimit" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenerateBatchHIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GenerateBatchHIDResult" type="s1:ReserveHIDlistVO" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPrac">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllPracResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPracResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateEncounterHID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusIS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateEncounterHIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSHEBADByHID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSHEBADByHIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSHEBADByHIDResult" type="s1:DO_IDENTIFIER" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSHEBADByEncounterId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="encounterid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSHEBADByEncounterIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSHEBADByEncounterIdResult" type="s1:DO_IDENTIFIER" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckEstelamHoviat">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="estelamHoviatError" type="tns:ArrayOfEstelamHoviatError" />
+            <s:element minOccurs="1" maxOccurs="1" name="medicalRecordNumber" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="estelamHoviatPersonInfo" type="tns:EstelamHoviatPersonInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEstelamHoviatError">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EstelamHoviatError" nillable="true" type="tns:EstelamHoviatError" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EstelamHoviatError">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ErrorId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorText" type="tns:ArrayOfString" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EstelamHoviatPersonInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NationalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthDate_Day" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthDate_Month" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthDate_Year" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Father_FirstName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckEstelamHoviatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="estelamHoviatError" type="tns:ArrayOfEstelamHoviatError" />
+            <s:element minOccurs="0" maxOccurs="1" name="estelamHoviatPersonInfo" type="tns:EstelamHoviatPersonInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveSDKLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sdkLog" type="tns:SDKLog" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SDKLog">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="RecieveDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ResultType" type="tns:eSDKResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FunctionName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SDKVersion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SepasVersion" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientIP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CallSDKFromClient" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataXML" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataXMLValue">
+            <s:complexType>
+              <s:sequence>
+                <s:any processContents="lax" />
+              </s:sequence>
+            </s:complexType>
+          </s:element>
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="eSDKResult">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="Failed" />
+          <s:enumeration value="TimeOut" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SaveSDKLogResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SaveClientSDKLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sdkLog" type="tns:NewSDKLog" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="NewSDKLog">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="SendDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="RecieveDateTime" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuccess" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FunctionName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SDKVersion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SepasVersion" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientIP" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CallSDKFromClient" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="SendXMLData" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecieveXMLData" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveClientSDKLogResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSepasWebServiceURL">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSepasWebServiceURLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSepasWebServiceURLResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://thrita.behdasht.gov.ir/VM/">
+      <s:complexType name="HealthcareProviderVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Role" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="Specialty" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="Identifier" type="s1:DO_IDENTIFIER" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactPoint" type="s1:ArrayOfElectronicContactVO" />
+        </s:sequence>
+        <s:attribute name="FirstName" type="s:string" />
+        <s:attribute name="LastName" type="s:string" />
+        <s:attribute name="FullName" type="s:string" />
+      </s:complexType>
+      <s:complexType name="DO_CODED_TEXT">
+        <s:attribute name="Value" type="s:string" />
+        <s:attribute name="Terminology_id" type="s:string" />
+        <s:attribute name="Coded_string" type="s:string" />
+      </s:complexType>
+      <s:complexType name="DO_IDENTIFIER">
+        <s:attribute name="Issuer" type="s:string" />
+        <s:attribute name="Assigner" type="s:string" />
+        <s:attribute name="Type" type="s:string" />
+        <s:attribute name="ID" type="s:string" />
+      </s:complexType>
+      <s:complexType name="ArrayOfElectronicContactVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ElectronicContactVO" nillable="true" type="s1:ElectronicContactVO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ElectronicContactVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="MediumType" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="Usage" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="Detail" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InsuranceInquiryVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nationalcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthDate" type="s1:DO_DATE" />
+          <s:element minOccurs="0" maxOccurs="1" name="Insurer" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="InsurerBox" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="InsuranceNumber" type="s1:DO_IDENTIFIER" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpirationDate" type="s1:DO_DATE" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gender" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="MaritalStatus" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="PictureB64" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RecommendationMessage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InquiryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExtraProperties" type="s1:ArrayOfUndefinedDataVO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DO_DATE">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Year" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Month" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Day" nillable="true" type="s:int" />
+        </s:sequence>
+        <s:attribute name="ISOString" type="s:string" />
+      </s:complexType>
+      <s:complexType name="ArrayOfUndefinedDataVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UndefinedDataVO" nillable="true" type="s1:UndefinedDataVO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UndefinedDataVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Element" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PersonVO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DeathStatus" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeathDate" type="s1:DO_DATE" />
+          <s:element minOccurs="0" maxOccurs="1" name="OtherIdentifier" type="s1:ArrayOfPersonIdentifierVO" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nationality" type="s1:DO_CODED_TEXT" />
+          <s:element minOccurs="0" maxOccurs="1" name="BirthDate" type="s1:DO_DATE" />
+          <s:element minOccurs="0" maxOccurs="1" name="Father_FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Gender" type="s1:DO_CODED_TEXT" />
+        </s:sequence>
+        <s:attribute name="FirstName" type="s:string" />
+        <s:attribute name="LastName" type="s:string" />
+        <s:attribute name="NationalCode" type="s:string" />
+      </s:complexType>
+      <s:complexType name="ArrayOfPersonIdentifierVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PersonIdentifierVO" nillable="true" type="s1:PersonIdentifierVO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PersonIdentifierVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Identifier" type="s1:DO_IDENTIFIER" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExpireDate" type="s1:DO_DATE" />
+          <s:element minOccurs="0" maxOccurs="1" name="IssueDate" type="s1:DO_DATE" />
+          <s:element minOccurs="1" maxOccurs="1" name="Expired" nillable="true" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="SerialNumber" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ReserveHIDlistVO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="HID" type="s1:ArrayOfDO_IDENTIFIER" />
+          <s:element minOccurs="0" maxOccurs="1" name="ValidDate" type="s1:DO_DATE" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDO_IDENTIFIER">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DO_IDENTIFIER" nillable="true" type="s1:DO_IDENTIFIER" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="NeedBirthDateOnEstelamSoapIn">
+    <wsdl:part name="parameters" element="tns:NeedBirthDateOnEstelam" />
+  </wsdl:message>
+  <wsdl:message name="NeedBirthDateOnEstelamSoapOut">
+    <wsdl:part name="parameters" element="tns:NeedBirthDateOnEstelamResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHealthCarePorviderInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHealthCarePorviderInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetHealthCarePorviderInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHealthCarePorviderInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceListByNationalCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInsuranceListByNationalCode" />
+  </wsdl:message>
+  <wsdl:message name="GetInsuranceListByNationalCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInsuranceListByNationalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHIDByNationalCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHIDByNationalCode" />
+  </wsdl:message>
+  <wsdl:message name="GetHIDByNationalCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHIDByNationalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminateHIDSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminateHID" />
+  </wsdl:message>
+  <wsdl:message name="EliminateHIDSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminateHIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateHIDSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateHID" />
+  </wsdl:message>
+  <wsdl:message name="UpdateHIDSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateHIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyHIDStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyHIDStatus" />
+  </wsdl:message>
+  <wsdl:message name="VerifyHIDStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyHIDStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonByNationalCodeAndBirthDateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPersonByNationalCodeAndBirthDate" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonByNationalCodeAndBirthDateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPersonByNationalCodeAndBirthDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonByNationalCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPersonByNationalCode" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonByNationalCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPersonByNationalCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenerateBatchHIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GenerateBatchHID" />
+  </wsdl:message>
+  <wsdl:message name="GenerateBatchHIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GenerateBatchHIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPracSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPrac" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPracSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPracResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEncounterHIDSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateEncounterHID" />
+  </wsdl:message>
+  <wsdl:message name="UpdateEncounterHIDSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateEncounterHIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSHEBADByHIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSHEBADByHID" />
+  </wsdl:message>
+  <wsdl:message name="GetSHEBADByHIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSHEBADByHIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSHEBADByEncounterIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSHEBADByEncounterId" />
+  </wsdl:message>
+  <wsdl:message name="GetSHEBADByEncounterIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSHEBADByEncounterIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckEstelamHoviatSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckEstelamHoviat" />
+  </wsdl:message>
+  <wsdl:message name="CheckEstelamHoviatSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckEstelamHoviatResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveSDKLogSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveSDKLog" />
+  </wsdl:message>
+  <wsdl:message name="SaveSDKLogSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveSDKLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveClientSDKLogSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveClientSDKLog" />
+  </wsdl:message>
+  <wsdl:message name="SaveClientSDKLogSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveClientSDKLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSepasWebServiceURLSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSepasWebServiceURL" />
+  </wsdl:message>
+  <wsdl:message name="GetSepasWebServiceURLSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSepasWebServiceURLResponse" />
+  </wsdl:message>
+  <wsdl:portType name="POCSWebServiceSoap">
+    <wsdl:operation name="NeedBirthDateOnEstelam">
+      <wsdl:input message="tns:NeedBirthDateOnEstelamSoapIn" />
+      <wsdl:output message="tns:NeedBirthDateOnEstelamSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthCarePorviderInfo">
+      <wsdl:input message="tns:GetHealthCarePorviderInfoSoapIn" />
+      <wsdl:output message="tns:GetHealthCarePorviderInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceListByNationalCode">
+      <wsdl:input message="tns:GetInsuranceListByNationalCodeSoapIn" />
+      <wsdl:output message="tns:GetInsuranceListByNationalCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHIDByNationalCode">
+      <wsdl:input message="tns:GetHIDByNationalCodeSoapIn" />
+      <wsdl:output message="tns:GetHIDByNationalCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminateHID">
+      <wsdl:input message="tns:EliminateHIDSoapIn" />
+      <wsdl:output message="tns:EliminateHIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHID">
+      <wsdl:input message="tns:UpdateHIDSoapIn" />
+      <wsdl:output message="tns:UpdateHIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyHIDStatus">
+      <wsdl:input message="tns:VerifyHIDStatusSoapIn" />
+      <wsdl:output message="tns:VerifyHIDStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByNationalCodeAndBirthDate">
+      <wsdl:input message="tns:GetPersonByNationalCodeAndBirthDateSoapIn" />
+      <wsdl:output message="tns:GetPersonByNationalCodeAndBirthDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByNationalCode">
+      <wsdl:input message="tns:GetPersonByNationalCodeSoapIn" />
+      <wsdl:output message="tns:GetPersonByNationalCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerateBatchHID">
+      <wsdl:input message="tns:GenerateBatchHIDSoapIn" />
+      <wsdl:output message="tns:GenerateBatchHIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPrac">
+      <wsdl:input message="tns:GetAllPracSoapIn" />
+      <wsdl:output message="tns:GetAllPracSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEncounterHID">
+      <wsdl:input message="tns:UpdateEncounterHIDSoapIn" />
+      <wsdl:output message="tns:UpdateEncounterHIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSHEBADByHID">
+      <wsdl:input message="tns:GetSHEBADByHIDSoapIn" />
+      <wsdl:output message="tns:GetSHEBADByHIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSHEBADByEncounterId">
+      <wsdl:input message="tns:GetSHEBADByEncounterIdSoapIn" />
+      <wsdl:output message="tns:GetSHEBADByEncounterIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckEstelamHoviat">
+      <wsdl:input message="tns:CheckEstelamHoviatSoapIn" />
+      <wsdl:output message="tns:CheckEstelamHoviatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveSDKLog">
+      <wsdl:input message="tns:SaveSDKLogSoapIn" />
+      <wsdl:output message="tns:SaveSDKLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveClientSDKLog">
+      <wsdl:input message="tns:SaveClientSDKLogSoapIn" />
+      <wsdl:output message="tns:SaveClientSDKLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSepasWebServiceURL">
+      <wsdl:input message="tns:GetSepasWebServiceURLSoapIn" />
+      <wsdl:output message="tns:GetSepasWebServiceURLSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="POCSWebServiceSoap" type="tns:POCSWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="NeedBirthDateOnEstelam">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/NeedBirthDateOnEstelam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthCarePorviderInfo">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetHealthCarePorviderInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceListByNationalCode">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetInsuranceListByNationalCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHIDByNationalCode">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetHIDByNationalCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminateHID">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/EliminateHID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHID">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/UpdateHID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyHIDStatus">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/VerifyHIDStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByNationalCodeAndBirthDate">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetPersonByNationalCodeAndBirthDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByNationalCode">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetPersonByNationalCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateBatchHID">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GenerateBatchHID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPrac">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetAllPrac" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEncounterHID">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/UpdateEncounterHID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSHEBADByHID">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetSHEBADByHID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSHEBADByEncounterId">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetSHEBADByEncounterId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEstelamHoviat">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/CheckEstelamHoviat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSDKLog">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/SaveSDKLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveClientSDKLog">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/SaveClientSDKLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSepasWebServiceURL">
+      <soap:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetSepasWebServiceURL" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="POCSWebServiceSoap12" type="tns:POCSWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="NeedBirthDateOnEstelam">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/NeedBirthDateOnEstelam" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHealthCarePorviderInfo">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetHealthCarePorviderInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInsuranceListByNationalCode">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetInsuranceListByNationalCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHIDByNationalCode">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetHIDByNationalCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminateHID">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/EliminateHID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateHID">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/UpdateHID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyHIDStatus">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/VerifyHIDStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByNationalCodeAndBirthDate">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetPersonByNationalCodeAndBirthDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonByNationalCode">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetPersonByNationalCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerateBatchHID">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GenerateBatchHID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPrac">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetAllPrac" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEncounterHID">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/UpdateEncounterHID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSHEBADByHID">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetSHEBADByHID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSHEBADByEncounterId">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetSHEBADByEncounterId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckEstelamHoviat">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/CheckEstelamHoviat" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveSDKLog">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/SaveSDKLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveClientSDKLog">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/SaveClientSDKLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSepasWebServiceURL">
+      <soap12:operation soapAction="http://LocalHost/RWSepas02/WebServices/GetSepasWebServiceURL" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="POCSWebService">
+    <wsdl:port name="POCSWebServiceSoap" binding="tns:POCSWebServiceSoap">
+      <soap:address location="http://192.168.110.2/rwsepas02/WebServices/PocsWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="POCSWebServiceSoap12" binding="tns:POCSWebServiceSoap12">
+      <soap12:address location="http://192.168.110.2/rwsepas02/WebServices/PocsWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

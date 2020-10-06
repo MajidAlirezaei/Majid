@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendOnePackageByHISKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hisKey" type="tns:SepasService_HIS_Key" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="tns:eServiceType" />
+            <s:element minOccurs="1" maxOccurs="1" name="childServiceType" nillable="true" type="tns:eChildServiceType" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SepasService_HIS_Key">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Dispenser_Key" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BillPatient_EncounterId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Admitted_EncounterId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeathCertificate_EncounterId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReferralFeedBack_EncounterId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Referral_EncounterId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="ImagingPrescription_OrderDocId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Prescriber_MedicationPrescriptionId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Laboratory_ServiceOrderId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pathology_ServiceOrderId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="LaboratoryPrescription_LabSpecimenSpecsId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Bed_EncounterLocationId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Bed_DateOf" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Bed_BedId" nillable="true" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Bed_BedState" type="tns:eBedStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="eBedStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Full" />
+          <s:enumeration value="Empty" />
+          <s:enumeration value="Reserved" />
+          <s:enumeration value="Discharging" />
+          <s:enumeration value="OutOfService" />
+          <s:enumeration value="InTransition" />
+          <s:enumeration value="ReturnFromDischarging" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="eServiceType">
+        <s:restriction base="s:string">
+          <s:enumeration value="BillPatient" />
+          <s:enumeration value="Admitted" />
+          <s:enumeration value="Bed" />
+          <s:enumeration value="Pathology" />
+          <s:enumeration value="DeathCertificate" />
+          <s:enumeration value="ReferralFeedBack" />
+          <s:enumeration value="Laboratory" />
+          <s:enumeration value="Prescriber" />
+          <s:enumeration value="Dispenser" />
+          <s:enumeration value="Referral" />
+          <s:enumeration value="ImagingPrescription" />
+          <s:enumeration value="LaboratoryPrescription" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="eChildServiceType">
+        <s:restriction base="s:string">
+          <s:enumeration value="BillPatient_InPatient" />
+          <s:enumeration value="BillPatient_OutPatient" />
+          <s:enumeration value="BillPatient_Emergency" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SendOnePackageByHISKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendOnePackageByHISKeyResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSendStatusByHISKey">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="hisKey" type="tns:SepasService_HIS_Key" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="tns:eServiceType" />
+            <s:element minOccurs="1" maxOccurs="1" name="childServiceType" nillable="true" type="tns:eChildServiceType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSendStatusByHISKeyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSendStatusByHISKeyResult" type="tns:SendStatusResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SendStatusResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="PackageInfoId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="MRN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FailedList" type="tns:ArrayOfSendStatusFailedResult" />
+          <s:element minOccurs="0" maxOccurs="1" name="SuccessList" type="tns:ArrayOfSendStatusSuccessResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSendStatusFailedResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SendStatusFailedResult" nillable="true" type="tns:SendStatusFailedResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SendStatusFailedResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RunSessionId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageUID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSendStatusSuccessResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SendStatusSuccessResult" nillable="true" type="tns:SendStatusSuccessResult" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SendStatusSuccessResult">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="RunSessionId" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageUID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSendStatusByEncounterID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="encounterId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="serviceType" type="tns:eServiceType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSendStatusByEncounterIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSendStatusByEncounterIDResult" type="tns:ArrayOfSendStatusResult" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSendStatusResult">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SendStatusResult" nillable="true" type="tns:SendStatusResult" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendOnePackageByHISKeySoapIn">
+    <wsdl:part name="parameters" element="tns:SendOnePackageByHISKey" />
+  </wsdl:message>
+  <wsdl:message name="SendOnePackageByHISKeySoapOut">
+    <wsdl:part name="parameters" element="tns:SendOnePackageByHISKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSendStatusByHISKeySoapIn">
+    <wsdl:part name="parameters" element="tns:GetSendStatusByHISKey" />
+  </wsdl:message>
+  <wsdl:message name="GetSendStatusByHISKeySoapOut">
+    <wsdl:part name="parameters" element="tns:GetSendStatusByHISKeyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSendStatusByEncounterIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSendStatusByEncounterID" />
+  </wsdl:message>
+  <wsdl:message name="GetSendStatusByEncounterIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSendStatusByEncounterIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PackageSenderWebServiceSoap">
+    <wsdl:operation name="SendOnePackageByHISKey">
+      <wsdl:input message="tns:SendOnePackageByHISKeySoapIn" />
+      <wsdl:output message="tns:SendOnePackageByHISKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSendStatusByHISKey">
+      <wsdl:input message="tns:GetSendStatusByHISKeySoapIn" />
+      <wsdl:output message="tns:GetSendStatusByHISKeySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSendStatusByEncounterID">
+      <wsdl:input message="tns:GetSendStatusByEncounterIDSoapIn" />
+      <wsdl:output message="tns:GetSendStatusByEncounterIDSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PackageSenderWebServiceSoap" type="tns:PackageSenderWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendOnePackageByHISKey">
+      <soap:operation soapAction="http://tempuri.org/SendOnePackageByHISKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSendStatusByHISKey">
+      <soap:operation soapAction="http://tempuri.org/GetSendStatusByHISKey" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSendStatusByEncounterID">
+      <soap:operation soapAction="http://tempuri.org/GetSendStatusByEncounterID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PackageSenderWebServiceSoap12" type="tns:PackageSenderWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendOnePackageByHISKey">
+      <soap12:operation soapAction="http://tempuri.org/SendOnePackageByHISKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSendStatusByHISKey">
+      <soap12:operation soapAction="http://tempuri.org/GetSendStatusByHISKey" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSendStatusByEncounterID">
+      <soap12:operation soapAction="http://tempuri.org/GetSendStatusByEncounterID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PackageSenderWebService">
+    <wsdl:port name="PackageSenderWebServiceSoap" binding="tns:PackageSenderWebServiceSoap">
+      <soap:address location="http://192.168.110.2/rwsepas02/WebServices/PackageSenderWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="PackageSenderWebServiceSoap12" binding="tns:PackageSenderWebServiceSoap12">
+      <soap12:address location="http://192.168.110.2/rwsepas02/WebServices/PackageSenderWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
