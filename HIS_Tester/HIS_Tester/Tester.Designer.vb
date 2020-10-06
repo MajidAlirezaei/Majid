@@ -42,6 +42,12 @@ Partial Class Tester
         Me.txtNationalCode1 = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.lblResualtEOP = New System.Windows.Forms.Label()
+        Me.lblEOP = New System.Windows.Forms.Label()
+        Me.lblResualtDitas2 = New System.Windows.Forms.Label()
+        Me.lblDitas2 = New System.Windows.Forms.Label()
+        Me.lblResualtDitastest = New System.Windows.Forms.Label()
+        Me.lblDitastest = New System.Windows.Forms.Label()
         Me.lblResualtravan = New System.Windows.Forms.Label()
         Me.lblravan = New System.Windows.Forms.Label()
         Me.lblResualtfrzab = New System.Windows.Forms.Label()
@@ -79,12 +85,6 @@ Partial Class Tester
         Me.lblemsaj = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cboSDKType = New System.Windows.Forms.ComboBox()
-        Me.lblResualtDitastest = New System.Windows.Forms.Label()
-        Me.lblDitastest = New System.Windows.Forms.Label()
-        Me.lblResualtDitas2 = New System.Windows.Forms.Label()
-        Me.lblDitas2 = New System.Windows.Forms.Label()
-        Me.lblResualtEOP = New System.Windows.Forms.Label()
-        Me.lblEOP = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -131,7 +131,7 @@ Partial Class Tester
         '
         'txtVersionInfo
         '
-        Me.txtVersionInfo.Location = New System.Drawing.Point(167, 54)
+        Me.txtVersionInfo.Location = New System.Drawing.Point(167, 77)
         Me.txtVersionInfo.Multiline = True
         Me.txtVersionInfo.Name = "txtVersionInfo"
         Me.txtVersionInfo.ReadOnly = True
@@ -142,7 +142,7 @@ Partial Class Tester
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(584, 54)
+        Me.Label2.Location = New System.Drawing.Point(584, 77)
         Me.Label2.Name = "Label2"
         Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.Label2.Size = New System.Drawing.Size(53, 13)
@@ -324,6 +324,63 @@ Partial Class Tester
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "تست ارتباط"
         Me.TabPage4.UseVisualStyleBackColor = True
+        '
+        'lblResualtEOP
+        '
+        Me.lblResualtEOP.AutoSize = True
+        Me.lblResualtEOP.Location = New System.Drawing.Point(272, 119)
+        Me.lblResualtEOP.Name = "lblResualtEOP"
+        Me.lblResualtEOP.Size = New System.Drawing.Size(25, 13)
+        Me.lblResualtEOP.TabIndex = 40
+        Me.lblResualtEOP.Text = "      "
+        '
+        'lblEOP
+        '
+        Me.lblEOP.AutoSize = True
+        Me.lblEOP.Location = New System.Drawing.Point(323, 119)
+        Me.lblEOP.Name = "lblEOP"
+        Me.lblEOP.Size = New System.Drawing.Size(97, 13)
+        Me.lblEOP.TabIndex = 39
+        Me.lblEOP.Tag = "EOP.behdasht.gov.ir"
+        Me.lblEOP.Text = "وزارت بهداشت EOP"
+        '
+        'lblResualtDitas2
+        '
+        Me.lblResualtDitas2.AutoSize = True
+        Me.lblResualtDitas2.Location = New System.Drawing.Point(272, 148)
+        Me.lblResualtDitas2.Name = "lblResualtDitas2"
+        Me.lblResualtDitas2.Size = New System.Drawing.Size(25, 13)
+        Me.lblResualtDitas2.TabIndex = 38
+        Me.lblResualtDitas2.Text = "      "
+        '
+        'lblDitas2
+        '
+        Me.lblDitas2.AutoSize = True
+        Me.lblDitas2.Location = New System.Drawing.Point(323, 148)
+        Me.lblDitas2.Name = "lblDitas2"
+        Me.lblDitas2.Size = New System.Drawing.Size(107, 13)
+        Me.lblDitas2.TabIndex = 37
+        Me.lblDitas2.Tag = "Ditas2.behdasht.gov.ir"
+        Me.lblDitas2.Text = "وزارت بهداشت Ditas2"
+        '
+        'lblResualtDitastest
+        '
+        Me.lblResualtDitastest.AutoSize = True
+        Me.lblResualtDitastest.Location = New System.Drawing.Point(272, 174)
+        Me.lblResualtDitastest.Name = "lblResualtDitastest"
+        Me.lblResualtDitastest.Size = New System.Drawing.Size(25, 13)
+        Me.lblResualtDitastest.TabIndex = 36
+        Me.lblResualtDitastest.Text = "      "
+        '
+        'lblDitastest
+        '
+        Me.lblDitastest.AutoSize = True
+        Me.lblDitastest.Location = New System.Drawing.Point(323, 174)
+        Me.lblDitastest.Name = "lblDitastest"
+        Me.lblDitastest.Size = New System.Drawing.Size(120, 13)
+        Me.lblDitastest.TabIndex = 35
+        Me.lblDitastest.Tag = "Ditastest.behdasht.gov.ir"
+        Me.lblDitastest.Text = "وزارت بهداشت Ditastest"
         '
         'lblResualtravan
         '
@@ -677,63 +734,6 @@ Partial Class Tester
         Me.cboSDKType.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.cboSDKType.Size = New System.Drawing.Size(201, 21)
         Me.cboSDKType.TabIndex = 8
-        '
-        'lblResualtDitastest
-        '
-        Me.lblResualtDitastest.AutoSize = True
-        Me.lblResualtDitastest.Location = New System.Drawing.Point(272, 174)
-        Me.lblResualtDitastest.Name = "lblResualtDitastest"
-        Me.lblResualtDitastest.Size = New System.Drawing.Size(25, 13)
-        Me.lblResualtDitastest.TabIndex = 36
-        Me.lblResualtDitastest.Text = "      "
-        '
-        'lblDitastest
-        '
-        Me.lblDitastest.AutoSize = True
-        Me.lblDitastest.Location = New System.Drawing.Point(323, 174)
-        Me.lblDitastest.Name = "lblDitastest"
-        Me.lblDitastest.Size = New System.Drawing.Size(120, 13)
-        Me.lblDitastest.TabIndex = 35
-        Me.lblDitastest.Tag = "Ditastest.behdasht.gov.ir"
-        Me.lblDitastest.Text = "وزارت بهداشت Ditastest"
-        '
-        'lblResualtDitas2
-        '
-        Me.lblResualtDitas2.AutoSize = True
-        Me.lblResualtDitas2.Location = New System.Drawing.Point(272, 148)
-        Me.lblResualtDitas2.Name = "lblResualtDitas2"
-        Me.lblResualtDitas2.Size = New System.Drawing.Size(25, 13)
-        Me.lblResualtDitas2.TabIndex = 38
-        Me.lblResualtDitas2.Text = "      "
-        '
-        'lblDitas2
-        '
-        Me.lblDitas2.AutoSize = True
-        Me.lblDitas2.Location = New System.Drawing.Point(323, 148)
-        Me.lblDitas2.Name = "lblDitas2"
-        Me.lblDitas2.Size = New System.Drawing.Size(107, 13)
-        Me.lblDitas2.TabIndex = 37
-        Me.lblDitas2.Tag = "Ditas2.behdasht.gov.ir"
-        Me.lblDitas2.Text = "وزارت بهداشت Ditas2"
-        '
-        'lblResualtEOP
-        '
-        Me.lblResualtEOP.AutoSize = True
-        Me.lblResualtEOP.Location = New System.Drawing.Point(272, 119)
-        Me.lblResualtEOP.Name = "lblResualtEOP"
-        Me.lblResualtEOP.Size = New System.Drawing.Size(25, 13)
-        Me.lblResualtEOP.TabIndex = 40
-        Me.lblResualtEOP.Text = "      "
-        '
-        'lblEOP
-        '
-        Me.lblEOP.AutoSize = True
-        Me.lblEOP.Location = New System.Drawing.Point(323, 119)
-        Me.lblEOP.Name = "lblEOP"
-        Me.lblEOP.Size = New System.Drawing.Size(97, 13)
-        Me.lblEOP.TabIndex = 39
-        Me.lblEOP.Tag = "EOP.behdasht.gov.ir"
-        Me.lblEOP.Text = "وزارت بهداشت EOP"
         '
         'Tester
         '
