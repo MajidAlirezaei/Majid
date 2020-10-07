@@ -1,0 +1,13 @@
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\Wrapper.dll
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\Wrapper.pdb
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\HIS_TestMode_2_KeyA2.dll
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\obj\Debug\Wrapper.csprojAssemblyReference.cache
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\obj\Debug\Wrapper.csproj.CoreCompileInputs.cache
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\obj\Debug\Wrapper.csproj.CopyComplete
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\obj\Debug\Wrapper.dll
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\obj\Debug\Wrapper.pdb
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\HIS.dll
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\HIS_OperationalMode_2_KeyA2.dll
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\HIS_OperationalMode_2_KeyA3.dll
+C:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\HIS_TestMode_2_KeyA3.dll
+c:\Users\0064708934\source\repos\HIS_Tester\Wrapper\bin\Debug\KeyA2DllNew.dll

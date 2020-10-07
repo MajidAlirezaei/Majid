@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://dto.services.sara.omid.msio.avihang.com/xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://dto.services.sara.omid.msio.avihang.com/xsd" />
+      <s:element name="GetAmount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PractitionerNationalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Sal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mah" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Code" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAmountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAmountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLastUpdate">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLastUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLastUpdateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PhysicianIncome_StartCalculation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Sal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Mah" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PhysicianIncome_StartCalculationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PhysicianIncome_StartCalculationResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BimehSalamat_GetPatientInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NationalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CurrentUserName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="LastContract" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BimehSalamat_GetPatientInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BimehSalamat_GetPatientInformationResult" type="tns:ArrayOfSARADTOAccountInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSARADTOAccountInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SARADTOAccountInfo" nillable="true" type="s1:SARADTOAccountInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Tamin_ApplyParNoteWebService_SaveRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sBletSerial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPrescDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDOCID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDOC_SPEC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDOC_FNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDOC_LNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDOC_TYPE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sCust_Service_type" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sBastari" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParList">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sParListJson" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLabGrpCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sFirstDiagnoseCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLabDiagnoseCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sLabDiagnoseComment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTotalSession" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sOrganNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPhysioDiagnoseCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sPhysioDiagnoseComment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDarmanPhysio" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDarmanDoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s2K" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sDocFani_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sMobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tamin_ApplyParNoteWebService_SaveRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RequestID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tamin_ApplyParNoteWebService_Save_Session_Physio">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="sParList">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="sParListJson" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tamin_ApplyParNoteWebService_Save_Session_PhysioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RequestId" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Tamin_ApplyParNoteWebService_Save_Diagnose_Par">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ParType" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RequestId" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsNormal" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="DiagnoseComment" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DocFani_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DiagnoseCode" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RCode" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Tamin_ApplyParNoteWebService_Save_Diagnose_ParResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="RCode" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RWHIX_SendPrescription">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="oDispensedPrescription" type="tns:DispensedPrescription" />
+            <s:element minOccurs="0" maxOccurs="1" name="TrackingCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="DispensedPrescription">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="originVo" type="tns:OriginVo" />
+          <s:element minOccurs="0" maxOccurs="1" name="admissionInfo" type="tns:AdmissionInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="insuranceInfo" type="tns:InsuranceInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="prescriptionCostInfo" type="tns:PrescriptionCostInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="medicationsInfo" type="tns:ArrayOfMedicationInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="combinationalMedicationsInfo" type="tns:ArrayOfCombinationalMedicationInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="medicalEquipmentsInfo" type="tns:ArrayOfMedicalEquipmentInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="patientInfo" type="tns:PatientInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="pharmacyInfo" type="tns:PharmacyInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="prescriptionDate" type="tns:MedDate" />
+          <s:element minOccurs="1" maxOccurs="1" name="therapyDuration" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="OriginVo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="providerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="providerSoftwareVersion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="providerSoftwareUser" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AdmissionInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="admissionDate" type="tns:MedDate" />
+          <s:element minOccurs="1" maxOccurs="1" name="admissionType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="healthCenterInfo" type="tns:HealthCenterInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MedDate">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="dateContent" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="dateCalendarType" type="tns:CalendarType" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CalendarType">
+        <s:restriction base="s:string">
+          <s:enumeration value="JALALI" />
+          <s:enumeration value="GREGORIAN" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="HealthCenterInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="healthCenterId" type="tns:Identifier" />
+          <s:element minOccurs="1" maxOccurs="1" name="organizationType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="attendingDoctorInfo" type="tns:DoctorInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Identifier">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="schemaAgency" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DoctorInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="medicalCouncilCode" type="tns:Identifier" />
+          <s:element minOccurs="1" maxOccurs="1" name="speciality" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InsuranceInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="insuranceNumber" type="tns:Identifier" />
+          <s:element minOccurs="0" maxOccurs="1" name="insuranceBookletExpirationDate" type="tns:MedDate" />
+          <s:element minOccurs="1" maxOccurs="1" name="insuranceBookletPageNumber" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="insuranceOrganizationCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="haveSupplementaryInsurance" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PrescriptionCostInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="totalCost" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="technicalCost" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="discount" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="otherExpense" type="tns:OtherExpense" />
+          <s:element minOccurs="0" maxOccurs="1" name="tax" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="payableByPatient" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="automation" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="subsidy" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="internetConfirmation" type="tns:Amount" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Amount">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="content" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="currencyCode" type="tns:Currency" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Currency">
+        <s:restriction base="s:string">
+          <s:enumeration value="IRR" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="OtherExpense">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="titleOfMedicalExpenses" type="tns:Text" />
+          <s:element minOccurs="0" maxOccurs="1" name="costOfMedicalExpenses" type="tns:Amount" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Text">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="languageCode" type="tns:Language" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Language">
+        <s:restriction base="s:string">
+          <s:enumeration value="per" />
+          <s:enumeration value="en" />
+          <s:enumeration value="fr" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="ArrayOfMedicationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MedicationInfo" nillable="true" type="tns:MedicationInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MedicationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="acceptedMedicationItemInfo" type="tns:AcceptedMedicationItemInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="checkedOutMedicationItemInfo" type="tns:CheckedOutMedicationItemInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="useSubstitutionMedication" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AcceptedMedicationItemInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="genericCode" type="tns:Identifier" />
+          <s:element minOccurs="0" maxOccurs="1" name="frequencyUsage" type="tns:Text" />
+          <s:element minOccurs="0" maxOccurs="1" name="medicationCount" type="tns:Quantity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Quantity">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="content" type="s:float" />
+          <s:element minOccurs="1" maxOccurs="1" name="unitCode" type="tns:UnitCode" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="UnitCode">
+        <s:restriction base="s:string">
+          <s:enumeration value="U" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="CheckedOutMedicationItemInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="nationalDrugCode" type="tns:Identifier" />
+          <s:element minOccurs="0" maxOccurs="1" name="frequencyUsage" type="tns:Text" />
+          <s:element minOccurs="0" maxOccurs="1" name="deliveredMedicationCount" type="tns:Quantity" />
+          <s:element minOccurs="0" maxOccurs="1" name="medicationDeliverDate" type="tns:MedDate" />
+          <s:element minOccurs="0" maxOccurs="1" name="costs" type="tns:CheckedOutMedicationCosts" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CheckedOutMedicationCosts">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="totalCost" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="insuranceContribution" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="patientContribution" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="differenceOfInsuranceCoverAndPrice" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="supplementaryContribution" type="tns:Amount" />
+          <s:element minOccurs="0" maxOccurs="1" name="payableByPatient" type="tns:Amount" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCombinationalMedicationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CombinationalMedicationInfo" nillable="true" type="tns:CombinationalMedicationInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CombinationalMedicationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ingredientsInfo" type="tns:ArrayOfIngredientInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="containerInfo" type="tns:Name" />
+          <s:element minOccurs="0" maxOccurs="1" name="wageInfo" type="tns:Amount" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfIngredientInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="IngredientInfo" nillable="true" type="tns:IngredientInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="IngredientInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ingredientName" type="tns:Name" />
+          <s:element minOccurs="0" maxOccurs="1" name="ingredientAmount" type="tns:Quantity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Name">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="languageCode" type="tns:Language" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMedicalEquipmentInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MedicalEquipmentInfo" nillable="true" type="tns:MedicalEquipmentInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MedicalEquipmentInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="productName" type="tns:Name" />
+          <s:element minOccurs="0" maxOccurs="1" name="productSize" type="tns:Quantity" />
+          <s:element minOccurs="0" maxOccurs="1" name="productModel" type="tns:Name" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PatientInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="fullName" type="tns:Name" />
+          <s:element minOccurs="0" maxOccurs="1" name="patientId" type="tns:Identifier" />
+          <s:element minOccurs="0" maxOccurs="1" name="birthDate" type="tns:MedDate" />
+          <s:element minOccurs="0" maxOccurs="1" name="mobilePhoneNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="gender" type="tns:Gender" />
+          <s:element minOccurs="1" maxOccurs="1" name="hasAttendant" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="fullNameOfAttendant" type="tns:Name" />
+          <s:element minOccurs="0" maxOccurs="1" name="attendantId" type="tns:Identifier" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="Gender">
+        <s:restriction base="s:string">
+          <s:enumeration value="Male" />
+          <s:enumeration value="Female" />
+          <s:enumeration value="Unknown" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="PharmacyInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="pharmacyCode" type="tns:Identifier" />
+          <s:element minOccurs="0" maxOccurs="1" name="technicalDirectorInfo" type="tns:TechnicalDirectorInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="pharmacistFounderInfo" type="tns:Identifier" />
+          <s:element minOccurs="0" maxOccurs="1" name="dispenserInfo" type="tns:Identifier" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TechnicalDirectorInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="tMedicalCouncilCode" type="tns:Identifier" />
+          <s:element minOccurs="1" maxOccurs="1" name="hasDeputy" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="deputy" type="tns:Identifier" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RWHIX_SendPrescriptionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TrackingCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RWHIX_GetInvoice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="InvoiceDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="InvoiceNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtHIXInvoice" type="tns:ArrayOfHIXInvoice" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtHIXInvoiceItem" type="tns:ArrayOfHIXInvoiceItem" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfHIXInvoice">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HIXInvoice" nillable="true" type="tns:HIXInvoice" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HIXInvoice">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SendDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BranchName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PayLoadID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PayLoadName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StatusName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceItems" type="tns:ArrayOfHIXInvoiceItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfHIXInvoiceItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="HIXInvoiceItem" nillable="true" type="tns:HIXInvoiceItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="HIXInvoiceItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="InvoiceID" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="rowNumber" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="productType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="productCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="internalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="barCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="productIRC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="productTrackId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="productName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="producerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="supplierName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="productForm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="maintainTemperature" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="packagingUnit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="totalNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="expireDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="batchNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="referenceNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="referenceDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="returnReason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="referenceTrackingCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="award" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="priceUnit" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalCostForSales" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="priceUnitForConsumer" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="consumerPriceAfterTax" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalCostForConsumer" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="discount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalCostAfterDiscount" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalTaxes" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="totalCostAfterTaxes" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="respite" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RWHIX_GetInvoiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dtHIXInvoice" type="tns:ArrayOfHIXInvoice" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtHIXInvoiceItem" type="tns:ArrayOfHIXInvoiceItem" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MedicalCouncil_GetPractitionerInformation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MedicalCouncilNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ErrorMessage" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MedicalCouncil_GetPractitionerInformationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MedicalCouncil_GetPractitionerInformationResult" type="tns:ArrayOfMedicalCouncil_Practitioner" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMedicalCouncil_Practitioner">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MedicalCouncil_Practitioner" nillable="true" type="tns:MedicalCouncil_Practitioner" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MedicalCouncil_Practitioner">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MCCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SpecialityCodes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastSpecialityTitle" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://dto.services.sara.omid.msio.avihang.com/xsd">
+      <s:complexType name="SARADTOAccountInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="activeFrom" nillable="true" type="s:date" />
+          <s:element minOccurs="0" maxOccurs="1" name="activeTo" nillable="true" type="s:date" />
+          <s:element minOccurs="0" maxOccurs="1" name="birthDate" nillable="true" type="s:date" />
+          <s:element minOccurs="0" maxOccurs="1" name="gender" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="lastName" nillable="true" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="name" nillable="true" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="provinceName" nillable="true" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="result" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="serviceName" nillable="true" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="status" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAmountSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAmount" />
+  </wsdl:message>
+  <wsdl:message name="GetAmountSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAmountResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLastUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLastUpdate" />
+  </wsdl:message>
+  <wsdl:message name="GetLastUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLastUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="PhysicianIncome_StartCalculationSoapIn">
+    <wsdl:part name="parameters" element="tns:PhysicianIncome_StartCalculation" />
+  </wsdl:message>
+  <wsdl:message name="PhysicianIncome_StartCalculationSoapOut">
+    <wsdl:part name="parameters" element="tns:PhysicianIncome_StartCalculationResponse" />
+  </wsdl:message>
+  <wsdl:message name="BimehSalamat_GetPatientInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:BimehSalamat_GetPatientInformation" />
+  </wsdl:message>
+  <wsdl:message name="BimehSalamat_GetPatientInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:BimehSalamat_GetPatientInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="Tamin_ApplyParNoteWebService_SaveRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:Tamin_ApplyParNoteWebService_SaveRequest" />
+  </wsdl:message>
+  <wsdl:message name="Tamin_ApplyParNoteWebService_SaveRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:Tamin_ApplyParNoteWebService_SaveRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="Tamin_ApplyParNoteWebService_Save_Session_PhysioSoapIn">
+    <wsdl:part name="parameters" element="tns:Tamin_ApplyParNoteWebService_Save_Session_Physio" />
+  </wsdl:message>
+  <wsdl:message name="Tamin_ApplyParNoteWebService_Save_Session_PhysioSoapOut">
+    <wsdl:part name="parameters" element="tns:Tamin_ApplyParNoteWebService_Save_Session_PhysioResponse" />
+  </wsdl:message>
+  <wsdl:message name="Tamin_ApplyParNoteWebService_Save_Diagnose_ParSoapIn">
+    <wsdl:part name="parameters" element="tns:Tamin_ApplyParNoteWebService_Save_Diagnose_Par" />
+  </wsdl:message>
+  <wsdl:message name="Tamin_ApplyParNoteWebService_Save_Diagnose_ParSoapOut">
+    <wsdl:part name="parameters" element="tns:Tamin_ApplyParNoteWebService_Save_Diagnose_ParResponse" />
+  </wsdl:message>
+  <wsdl:message name="RWHIX_SendPrescriptionSoapIn">
+    <wsdl:part name="parameters" element="tns:RWHIX_SendPrescription" />
+  </wsdl:message>
+  <wsdl:message name="RWHIX_SendPrescriptionSoapOut">
+    <wsdl:part name="parameters" element="tns:RWHIX_SendPrescriptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="RWHIX_GetInvoiceSoapIn">
+    <wsdl:part name="parameters" element="tns:RWHIX_GetInvoice" />
+  </wsdl:message>
+  <wsdl:message name="RWHIX_GetInvoiceSoapOut">
+    <wsdl:part name="parameters" element="tns:RWHIX_GetInvoiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="MedicalCouncil_GetPractitionerInformationSoapIn">
+    <wsdl:part name="parameters" element="tns:MedicalCouncil_GetPractitionerInformation" />
+  </wsdl:message>
+  <wsdl:message name="MedicalCouncil_GetPractitionerInformationSoapOut">
+    <wsdl:part name="parameters" element="tns:MedicalCouncil_GetPractitionerInformationResponse" />
+  </wsdl:message>
+  <wsdl:portType name="RWWebServicesSoap">
+    <wsdl:operation name="GetAmount">
+      <wsdl:input message="tns:GetAmountSoapIn" />
+      <wsdl:output message="tns:GetAmountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdate">
+      <wsdl:input message="tns:GetLastUpdateSoapIn" />
+      <wsdl:output message="tns:GetLastUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PhysicianIncome_StartCalculation">
+      <wsdl:input message="tns:PhysicianIncome_StartCalculationSoapIn" />
+      <wsdl:output message="tns:PhysicianIncome_StartCalculationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BimehSalamat_GetPatientInformation">
+      <wsdl:input message="tns:BimehSalamat_GetPatientInformationSoapIn" />
+      <wsdl:output message="tns:BimehSalamat_GetPatientInformationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_SaveRequest">
+      <wsdl:input message="tns:Tamin_ApplyParNoteWebService_SaveRequestSoapIn" />
+      <wsdl:output message="tns:Tamin_ApplyParNoteWebService_SaveRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_Save_Session_Physio">
+      <wsdl:input message="tns:Tamin_ApplyParNoteWebService_Save_Session_PhysioSoapIn" />
+      <wsdl:output message="tns:Tamin_ApplyParNoteWebService_Save_Session_PhysioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_Save_Diagnose_Par">
+      <wsdl:input message="tns:Tamin_ApplyParNoteWebService_Save_Diagnose_ParSoapIn" />
+      <wsdl:output message="tns:Tamin_ApplyParNoteWebService_Save_Diagnose_ParSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RWHIX_SendPrescription">
+      <wsdl:input message="tns:RWHIX_SendPrescriptionSoapIn" />
+      <wsdl:output message="tns:RWHIX_SendPrescriptionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RWHIX_GetInvoice">
+      <wsdl:input message="tns:RWHIX_GetInvoiceSoapIn" />
+      <wsdl:output message="tns:RWHIX_GetInvoiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MedicalCouncil_GetPractitionerInformation">
+      <wsdl:input message="tns:MedicalCouncil_GetPractitionerInformationSoapIn" />
+      <wsdl:output message="tns:MedicalCouncil_GetPractitionerInformationSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RWWebServicesSoap" type="tns:RWWebServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAmount">
+      <soap:operation soapAction="http://tempuri.org/GetAmount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdate">
+      <soap:operation soapAction="http://tempuri.org/GetLastUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PhysicianIncome_StartCalculation">
+      <soap:operation soapAction="http://tempuri.org/PhysicianIncome_StartCalculation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BimehSalamat_GetPatientInformation">
+      <soap:operation soapAction="http://tempuri.org/BimehSalamat_GetPatientInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_SaveRequest">
+      <soap:operation soapAction="http://tempuri.org/Tamin_ApplyParNoteWebService_SaveRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_Save_Session_Physio">
+      <soap:operation soapAction="http://tempuri.org/Tamin_ApplyParNoteWebService_Save_Session_Physio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_Save_Diagnose_Par">
+      <soap:operation soapAction="http://tempuri.org/Tamin_ApplyParNoteWebService_Save_Diagnose_Par" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RWHIX_SendPrescription">
+      <soap:operation soapAction="http://tempuri.org/RWHIX_SendPrescription" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RWHIX_GetInvoice">
+      <soap:operation soapAction="http://tempuri.org/RWHIX_GetInvoice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MedicalCouncil_GetPractitionerInformation">
+      <soap:operation soapAction="http://tempuri.org/MedicalCouncil_GetPractitionerInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RWWebServicesSoap12" type="tns:RWWebServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAmount">
+      <soap12:operation soapAction="http://tempuri.org/GetAmount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLastUpdate">
+      <soap12:operation soapAction="http://tempuri.org/GetLastUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PhysicianIncome_StartCalculation">
+      <soap12:operation soapAction="http://tempuri.org/PhysicianIncome_StartCalculation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BimehSalamat_GetPatientInformation">
+      <soap12:operation soapAction="http://tempuri.org/BimehSalamat_GetPatientInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_SaveRequest">
+      <soap12:operation soapAction="http://tempuri.org/Tamin_ApplyParNoteWebService_SaveRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_Save_Session_Physio">
+      <soap12:operation soapAction="http://tempuri.org/Tamin_ApplyParNoteWebService_Save_Session_Physio" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tamin_ApplyParNoteWebService_Save_Diagnose_Par">
+      <soap12:operation soapAction="http://tempuri.org/Tamin_ApplyParNoteWebService_Save_Diagnose_Par" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RWHIX_SendPrescription">
+      <soap12:operation soapAction="http://tempuri.org/RWHIX_SendPrescription" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RWHIX_GetInvoice">
+      <soap12:operation soapAction="http://tempuri.org/RWHIX_GetInvoice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MedicalCouncil_GetPractitionerInformation">
+      <soap12:operation soapAction="http://tempuri.org/MedicalCouncil_GetPractitionerInformation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RWWebServices">
+    <wsdl:port name="RWWebServicesSoap" binding="tns:RWWebServicesSoap">
+      <soap:address location="http://192.168.110.2/RWWebServer/WebServices/RWWebServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RWWebServicesSoap12" binding="tns:RWWebServicesSoap12">
+      <soap12:address location="http://192.168.110.2/RWWebServer/WebServices/RWWebServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1835 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HIS_Tester
+</name>
+</assembly>
+<members>
+<member name="T:HIS_Tester.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:HIS_Tester.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:HIS_Tester.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.PackageSenderWebService">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.#ctor">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PackageSenderWebService.PackageSenderWebService.SendOnePackageByHISKeyCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByHISKeyCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByEncounterIDCompleted">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.SendOnePackageByHISKey(HIS_Tester.PackageSenderWebService.SepasService_HIS_Key,HIS_Tester.PackageSenderWebService.eServiceType,System.Nullable{HIS_Tester.PackageSenderWebService.eChildServiceType},System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.SendOnePackageByHISKeyAsync(HIS_Tester.PackageSenderWebService.SepasService_HIS_Key,HIS_Tester.PackageSenderWebService.eServiceType,System.Nullable{HIS_Tester.PackageSenderWebService.eChildServiceType},System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.SendOnePackageByHISKeyAsync(HIS_Tester.PackageSenderWebService.SepasService_HIS_Key,HIS_Tester.PackageSenderWebService.eServiceType,System.Nullable{HIS_Tester.PackageSenderWebService.eChildServiceType},System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByHISKey(HIS_Tester.PackageSenderWebService.SepasService_HIS_Key,HIS_Tester.PackageSenderWebService.eServiceType,System.Nullable{HIS_Tester.PackageSenderWebService.eChildServiceType})">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByHISKeyAsync(HIS_Tester.PackageSenderWebService.SepasService_HIS_Key,HIS_Tester.PackageSenderWebService.eServiceType,System.Nullable{HIS_Tester.PackageSenderWebService.eChildServiceType})">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByHISKeyAsync(HIS_Tester.PackageSenderWebService.SepasService_HIS_Key,HIS_Tester.PackageSenderWebService.eServiceType,System.Nullable{HIS_Tester.PackageSenderWebService.eChildServiceType},System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByEncounterID(System.Int64,HIS_Tester.PackageSenderWebService.eServiceType)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByEncounterIDAsync(System.Int64,HIS_Tester.PackageSenderWebService.eServiceType)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.GetSendStatusByEncounterIDAsync(System.Int64,HIS_Tester.PackageSenderWebService.eServiceType,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PackageSenderWebService.PackageSenderWebService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Dispenser_Key">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.BillPatient_EncounterId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Admitted_EncounterId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.DeathCertificate_EncounterId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.ReferralFeedBack_EncounterId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Referral_EncounterId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.ImagingPrescription_OrderDocId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Prescriber_MedicationPrescriptionId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Laboratory_ServiceOrderId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Pathology_ServiceOrderId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.LaboratoryPrescription_LabSpecimenSpecsId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Bed_EncounterLocationId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Bed_DateOf">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Bed_BedId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SepasService_HIS_Key.Bed_BedState">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.eBedStatus">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eBedStatus.Full">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eBedStatus.Empty">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eBedStatus.Reserved">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eBedStatus.Discharging">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eBedStatus.OutOfService">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eBedStatus.InTransition">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eBedStatus.ReturnFromDischarging">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.SendStatusSuccessResult">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusSuccessResult.RunSessionId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusSuccessResult.MessageUID">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusSuccessResult.StartDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusSuccessResult.EndDate">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.SendStatusFailedResult">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusFailedResult.RunSessionId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusFailedResult.MessageUID">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusFailedResult.StartDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusFailedResult.EndDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusFailedResult.ErrorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.SendStatusResult">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusResult.PackageInfoId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusResult.MRN">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusResult.FailedList">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendStatusResult.SuccessList">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.eServiceType">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.BillPatient">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.Admitted">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.Bed">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.Pathology">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.DeathCertificate">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.ReferralFeedBack">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.Laboratory">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.Prescriber">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.Dispenser">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.Referral">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.ImagingPrescription">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eServiceType.LaboratoryPrescription">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.eChildServiceType">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eChildServiceType.BillPatient_InPatient">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eChildServiceType.BillPatient_OutPatient">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PackageSenderWebService.eChildServiceType.BillPatient_Emergency">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.SendOnePackageByHISKeyCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.SendOnePackageByHISKeyCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendOnePackageByHISKeyCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.SendOnePackageByHISKeyCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.GetSendStatusByHISKeyCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.GetSendStatusByHISKeyCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.GetSendStatusByHISKeyCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.GetSendStatusByEncounterIDCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PackageSenderWebService.GetSendStatusByEncounterIDCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PackageSenderWebService.GetSendStatusByEncounterIDCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.POCSWebService">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.#ctor">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.NeedBirthDateOnEstelamCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetHealthCarePorviderInfoCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetInsuranceListByNationalCodeCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetHIDByNationalCodeCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.EliminateHIDCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.UpdateHIDCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.VerifyHIDStatusCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCodeAndBirthDateCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCodeCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GenerateBatchHIDCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetAllPracCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.UpdateEncounterHIDCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByHIDCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByEncounterIdCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.CheckEstelamHoviatCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.SaveSDKLogCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.SaveClientSDKLogCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.PocsWebService.POCSWebService.GetSepasWebServiceURLCompleted">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.NeedBirthDateOnEstelam">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.NeedBirthDateOnEstelamAsync">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.NeedBirthDateOnEstelamAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetHealthCarePorviderInfo(System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetHealthCarePorviderInfoAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetHealthCarePorviderInfoAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetInsuranceListByNationalCode(System.String,System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetInsuranceListByNationalCodeAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetInsuranceListByNationalCodeAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetHIDByNationalCode(System.String,System.String,System.String,HIS_Tester.PocsWebService.DO_IDENTIFIER,HIS_Tester.PocsWebService.DO_CODED_TEXT,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetHIDByNationalCodeAsync(System.String,System.String,System.String,HIS_Tester.PocsWebService.DO_IDENTIFIER,HIS_Tester.PocsWebService.DO_CODED_TEXT,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetHIDByNationalCodeAsync(System.String,System.String,System.String,HIS_Tester.PocsWebService.DO_IDENTIFIER,HIS_Tester.PocsWebService.DO_CODED_TEXT,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.EliminateHID(System.String,System.String,HIS_Tester.PocsWebService.DO_CODED_TEXT,System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.EliminateHIDAsync(System.String,System.String,HIS_Tester.PocsWebService.DO_CODED_TEXT,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.EliminateHIDAsync(System.String,System.String,HIS_Tester.PocsWebService.DO_CODED_TEXT,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.UpdateHID(System.String,System.String,System.String,System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.UpdateHIDAsync(System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.UpdateHIDAsync(System.String,System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.VerifyHIDStatus(System.String,System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.VerifyHIDStatusAsync(System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.VerifyHIDStatusAsync(System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCodeAndBirthDate(System.String,System.Int32,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCodeAndBirthDateAsync(System.String,System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCodeAndBirthDateAsync(System.String,System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCode(System.String,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCodeAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetPersonByNationalCodeAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GenerateBatchHID(System.String,System.Int32,System.Boolean,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GenerateBatchHIDAsync(System.String,System.Int32,System.Boolean,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GenerateBatchHIDAsync(System.String,System.Int32,System.Boolean,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetAllPrac">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetAllPracAsync">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetAllPracAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.UpdateEncounterHID(System.String,System.Int32,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.UpdateEncounterHIDAsync(System.String,System.Int32,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.UpdateEncounterHIDAsync(System.String,System.Int32,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByHID(System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByHIDAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByHIDAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByEncounterId(System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByEncounterIdAsync(System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSHEBADByEncounterIdAsync(System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.CheckEstelamHoviat(HIS_Tester.PocsWebService.EstelamHoviatError[]@,System.Int64,HIS_Tester.PocsWebService.EstelamHoviatPersonInfo@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.CheckEstelamHoviatAsync(HIS_Tester.PocsWebService.EstelamHoviatError[],System.Int64,HIS_Tester.PocsWebService.EstelamHoviatPersonInfo)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.CheckEstelamHoviatAsync(HIS_Tester.PocsWebService.EstelamHoviatError[],System.Int64,HIS_Tester.PocsWebService.EstelamHoviatPersonInfo,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.SaveSDKLog(HIS_Tester.PocsWebService.SDKLog)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.SaveSDKLogAsync(HIS_Tester.PocsWebService.SDKLog)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.SaveSDKLogAsync(HIS_Tester.PocsWebService.SDKLog,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.SaveClientSDKLog(HIS_Tester.PocsWebService.NewSDKLog)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.SaveClientSDKLogAsync(HIS_Tester.PocsWebService.NewSDKLog)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.SaveClientSDKLogAsync(HIS_Tester.PocsWebService.NewSDKLog,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSepasWebServiceURL">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSepasWebServiceURLAsync">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.GetSepasWebServiceURLAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.PocsWebService.POCSWebService.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.HealthcareProviderVO">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.HealthcareProviderVO.Role">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.HealthcareProviderVO.Specialty">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.HealthcareProviderVO.Identifier">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.HealthcareProviderVO.ContactPoint">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.HealthcareProviderVO.FirstName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.HealthcareProviderVO.LastName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.HealthcareProviderVO.FullName">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.DO_CODED_TEXT">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_CODED_TEXT.Value">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_CODED_TEXT.Terminology_id">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_CODED_TEXT.Coded_string">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.NewSDKLog">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.Id">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.SendDateTime">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.RecieveDateTime">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.IsSuccess">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.ErrorMessage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.FunctionName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.SDKVersion">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.SepasVersion">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.ClientIP">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.CallSDKFromClient">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.SendXMLData">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NewSDKLog.RecieveXMLData">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.SDKLog">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.Id">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.SendDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.RecieveDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.ResultType">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.ErrorMessage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.FunctionName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.SDKVersion">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.SepasVersion">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.ClientIP">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.CallSDKFromClient">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.DataXML">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.SDKLog.DataXMLValue">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.eSDKResult">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PocsWebService.eSDKResult.Success">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PocsWebService.eSDKResult.Failed">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.PocsWebService.eSDKResult.TimeOut">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo.NationalCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo.BirthDate_Day">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo.BirthDate_Month">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo.BirthDate_Year">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo.FirstName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo.LastName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatPersonInfo.Father_FirstName">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.EstelamHoviatError">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatError.ErrorId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EstelamHoviatError.ErrorText">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.ReserveHIDlistVO">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.ReserveHIDlistVO.HID">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.ReserveHIDlistVO.ValidDate">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.DO_IDENTIFIER">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_IDENTIFIER.Issuer">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_IDENTIFIER.Assigner">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_IDENTIFIER.Type">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_IDENTIFIER.ID">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.DO_DATE">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_DATE.Year">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_DATE.Month">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_DATE.Day">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.DO_DATE.ISOString">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.PersonIdentifierVO">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonIdentifierVO.Identifier">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonIdentifierVO.ExpireDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonIdentifierVO.IssueDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonIdentifierVO.Expired">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonIdentifierVO.SerialNumber">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.PersonVO">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.DeathStatus">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.DeathDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.OtherIdentifier">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.Nationality">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.BirthDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.Father_FirstName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.Gender">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.FirstName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.LastName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.PersonVO.NationalCode">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.UndefinedDataVO">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.UndefinedDataVO.Element">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.UndefinedDataVO.Value">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.InsuranceInquiryVO">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.FirstName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.LastName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.Nationalcode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.BirthDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.Insurer">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.InsurerBox">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.InsuranceNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.ExpirationDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.Gender">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.MaritalStatus">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.PictureB64">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.Address">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.PostalCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.ErrorMessage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.RecommendationMessage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.InquiryID">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.InsuranceInquiryVO.ExtraProperties">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.ElectronicContactVO">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.ElectronicContactVO.MediumType">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.ElectronicContactVO.Usage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.ElectronicContactVO.Detail">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.NeedBirthDateOnEstelamCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.NeedBirthDateOnEstelamCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.NeedBirthDateOnEstelamCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetHealthCarePorviderInfoCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetHealthCarePorviderInfoCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetHealthCarePorviderInfoCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetHealthCarePorviderInfoCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetInsuranceListByNationalCodeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetInsuranceListByNationalCodeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetInsuranceListByNationalCodeCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetInsuranceListByNationalCodeCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetHIDByNationalCodeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetHIDByNationalCodeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetHIDByNationalCodeCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetHIDByNationalCodeCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.EliminateHIDCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.EliminateHIDCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EliminateHIDCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.EliminateHIDCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.UpdateHIDCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.UpdateHIDCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.UpdateHIDCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.UpdateHIDCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.VerifyHIDStatusCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.VerifyHIDStatusCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.VerifyHIDStatusCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.VerifyHIDStatusCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetPersonByNationalCodeAndBirthDateCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetPersonByNationalCodeAndBirthDateCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetPersonByNationalCodeAndBirthDateCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetPersonByNationalCodeAndBirthDateCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetPersonByNationalCodeCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetPersonByNationalCodeCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetPersonByNationalCodeCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetPersonByNationalCodeCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GenerateBatchHIDCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GenerateBatchHIDCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GenerateBatchHIDCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GenerateBatchHIDCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetAllPracCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetAllPracCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetAllPracCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.UpdateEncounterHIDCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.UpdateEncounterHIDCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.UpdateEncounterHIDCompletedEventArgs.errorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetSHEBADByHIDCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetSHEBADByHIDCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetSHEBADByHIDCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetSHEBADByEncounterIdCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetSHEBADByEncounterIdCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetSHEBADByEncounterIdCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.CheckEstelamHoviatCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.CheckEstelamHoviatCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.CheckEstelamHoviatCompletedEventArgs.estelamHoviatError">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.CheckEstelamHoviatCompletedEventArgs.estelamHoviatPersonInfo">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.SaveSDKLogCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.SaveClientSDKLogCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetSepasWebServiceURLCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.PocsWebService.GetSepasWebServiceURLCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.PocsWebService.GetSepasWebServiceURLCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.RWWebServices">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.#ctor">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.GetAmountCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.GetLastUpdateCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.PhysicianIncome_StartCalculationCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.BimehSalamat_GetPatientInformationCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_ParCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.RWHIX_SendPrescriptionCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.RWHIX_GetInvoiceCompleted">
+<remarks/>
+</member>
+<member name="E:HIS_Tester.RWWebServices.RWWebServices.MedicalCouncil_GetPractitionerInformationCompleted">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.GetAmount(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.GetAmountAsync(System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.GetAmountAsync(System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.GetLastUpdate">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.GetLastUpdateAsync">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.GetLastUpdateAsync(System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.PhysicianIncome_StartCalculation(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.PhysicianIncome_StartCalculationAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.PhysicianIncome_StartCalculationAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.BimehSalamat_GetPatientInformation(System.String,System.String,System.Boolean)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.BimehSalamat_GetPatientInformationAsync(System.String,System.String,System.Boolean)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.BimehSalamat_GetPatientInformationAsync(System.String,System.String,System.Boolean,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Data.DataTable,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String@,System.String@,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Data.DataTable,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Data.DataTable,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_Physio(System.Int64@,System.Data.DataTable,System.String,System.String@,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioAsync(System.Int64,System.Data.DataTable,System.String,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioAsync(System.Int64,System.Data.DataTable,System.String,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_Par(System.String,System.Int64,System.Boolean,System.String,System.String,System.String[],System.String@,System.Int64@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_ParAsync(System.String,System.Int64,System.Boolean,System.String,System.String,System.String[],System.String,System.Int64)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_ParAsync(System.String,System.Int64,System.Boolean,System.String,System.String,System.String[],System.String,System.Int64,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.RWHIX_SendPrescription(HIS_Tester.RWWebServices.DispensedPrescription,System.String@,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.RWHIX_SendPrescriptionAsync(HIS_Tester.RWWebServices.DispensedPrescription,System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.RWHIX_SendPrescriptionAsync(HIS_Tester.RWWebServices.DispensedPrescription,System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.RWHIX_GetInvoice(System.String,System.String,HIS_Tester.RWWebServices.HIXInvoice[]@,HIS_Tester.RWWebServices.HIXInvoiceItem[]@,System.String@)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.RWHIX_GetInvoiceAsync(System.String,System.String,HIS_Tester.RWWebServices.HIXInvoice[],HIS_Tester.RWWebServices.HIXInvoiceItem[],System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.RWHIX_GetInvoiceAsync(System.String,System.String,HIS_Tester.RWWebServices.HIXInvoice[],HIS_Tester.RWWebServices.HIXInvoiceItem[],System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.MedicalCouncil_GetPractitionerInformation(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.MedicalCouncil_GetPractitionerInformationAsync(System.String,System.String)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.MedicalCouncil_GetPractitionerInformationAsync(System.String,System.String,System.Object)">
+<remarks/>
+</member>
+<member name="M:HIS_Tester.RWWebServices.RWWebServices.CancelAsync(System.Object)">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.SARADTOAccountInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.activeFrom">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.activeFromSpecified">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.activeTo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.activeToSpecified">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.birthDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.birthDateSpecified">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.gender">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.lastName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.name">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.provinceName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.result">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.resultSpecified">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.serviceName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.SARADTOAccountInfo.status">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.MedicalCouncil_Practitioner">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalCouncil_Practitioner.Status">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalCouncil_Practitioner.MCCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalCouncil_Practitioner.SpecialityCodes">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalCouncil_Practitioner.FirstName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalCouncil_Practitioner.LastName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalCouncil_Practitioner.LastSpecialityTitle">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.HIXInvoiceItem">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.InvoiceID">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.rowNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.productType">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.productCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.internalCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.barCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.productIRC">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.productTrackId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.productName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.producerName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.supplierName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.productForm">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.maintainTemperature">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.packagingUnit">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.totalNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.expireDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.batchNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.referenceNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.referenceDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.returnReason">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.referenceTrackingCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.award">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.priceUnit">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.totalCostForSales">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.priceUnitForConsumer">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.consumerPriceAfterTax">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.totalCostForConsumer">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.discount">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.totalCostAfterDiscount">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.totalTaxes">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.totalCostAfterTaxes">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoiceItem.respite">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.HIXInvoice">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.InvoiceID">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.SendDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.InvoiceDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.InvoiceNo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.TrackingCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.CompanyCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.CompanyName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.BranchName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.PayLoadID">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.PayLoadName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.StatusName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HIXInvoice.InvoiceItems">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.TechnicalDirectorInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.TechnicalDirectorInfo.tMedicalCouncilCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.TechnicalDirectorInfo.hasDeputy">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.TechnicalDirectorInfo.deputy">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Identifier">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Identifier.content">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Identifier.schemaAgency">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.PharmacyInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PharmacyInfo.pharmacyCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PharmacyInfo.technicalDirectorInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PharmacyInfo.pharmacistFounderInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PharmacyInfo.dispenserInfo">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.PatientInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.fullName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.patientId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.birthDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.mobilePhoneNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.gender">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.hasAttendant">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.fullNameOfAttendant">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PatientInfo.attendantId">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Name">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Name.content">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Name.languageCode">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Language">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.Language.per">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.Language.en">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.Language.fr">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.MedDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedDate.dateContent">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedDate.dateCalendarType">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.CalendarType">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.CalendarType.JALALI">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.CalendarType.GREGORIAN">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Gender">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.Gender.Male">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.Gender.Female">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.Gender.Unknown">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.MedicalEquipmentInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalEquipmentInfo.productName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalEquipmentInfo.productSize">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalEquipmentInfo.productModel">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Quantity">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Quantity.content">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Quantity.unitCode">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.UnitCode">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.UnitCode.U">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.IngredientInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.IngredientInfo.ingredientName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.IngredientInfo.ingredientAmount">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.CombinationalMedicationInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CombinationalMedicationInfo.ingredientsInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CombinationalMedicationInfo.containerInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CombinationalMedicationInfo.wageInfo">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Amount">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Amount.content">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Amount.currencyCode">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Currency">
+<remarks/>
+</member>
+<member name="F:HIS_Tester.RWWebServices.Currency.IRR">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.CheckedOutMedicationCosts">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationCosts.totalCost">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationCosts.insuranceContribution">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationCosts.patientContribution">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationCosts.differenceOfInsuranceCoverAndPrice">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationCosts.supplementaryContribution">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationCosts.payableByPatient">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.CheckedOutMedicationItemInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationItemInfo.nationalDrugCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationItemInfo.frequencyUsage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationItemInfo.deliveredMedicationCount">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationItemInfo.medicationDeliverDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.CheckedOutMedicationItemInfo.costs">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Text">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Text.content">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Text.languageCode">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.AcceptedMedicationItemInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.AcceptedMedicationItemInfo.genericCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.AcceptedMedicationItemInfo.frequencyUsage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.AcceptedMedicationItemInfo.medicationCount">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.MedicationInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicationInfo.acceptedMedicationItemInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicationInfo.checkedOutMedicationItemInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicationInfo.useSubstitutionMedication">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.OtherExpense">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.OtherExpense.titleOfMedicalExpenses">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.OtherExpense.costOfMedicalExpenses">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.PrescriptionCostInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.totalCost">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.technicalCost">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.discount">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.otherExpense">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.tax">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.payableByPatient">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.automation">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.subsidy">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PrescriptionCostInfo.internetConfirmation">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.InsuranceInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.InsuranceInfo.insuranceNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.InsuranceInfo.insuranceBookletExpirationDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.InsuranceInfo.insuranceBookletPageNumber">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.InsuranceInfo.insuranceOrganizationCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.InsuranceInfo.haveSupplementaryInsurance">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.DoctorInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DoctorInfo.medicalCouncilCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DoctorInfo.speciality">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.HealthCenterInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HealthCenterInfo.healthCenterId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HealthCenterInfo.organizationType">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.HealthCenterInfo.attendingDoctorInfo">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.AdmissionInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.AdmissionInfo.admissionDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.AdmissionInfo.admissionType">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.AdmissionInfo.healthCenterInfo">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.OriginVo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.OriginVo.providerName">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.OriginVo.providerSoftwareVersion">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.OriginVo.providerSoftwareUser">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.DispensedPrescription">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.originVo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.admissionInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.insuranceInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.prescriptionCostInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.medicationsInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.combinationalMedicationsInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.medicalEquipmentsInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.patientInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.pharmacyInfo">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.prescriptionDate">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.DispensedPrescription.therapyDuration">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.GetAmountCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.GetAmountCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.GetAmountCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.GetLastUpdateCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.GetLastUpdateCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.GetLastUpdateCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.PhysicianIncome_StartCalculationCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.PhysicianIncome_StartCalculationCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.PhysicianIncome_StartCalculationCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.BimehSalamat_GetPatientInformationCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.BimehSalamat_GetPatientInformationCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.BimehSalamat_GetPatientInformationCompletedEventArgs.Result">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestCompletedEventArgs.ErrorMessage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestCompletedEventArgs.RCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_SaveRequestCompletedEventArgs.RequestID">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioCompletedEventArgs.RequestId">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioCompletedEventArgs.ErrorMessage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Session_PhysioCompletedEventArgs.RCode">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_ParCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_ParCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_ParCompletedEventArgs.ErrorMessage">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.Tamin_ApplyParNoteWebService_Save_Diagnose_ParCompletedEventArgs.RCode">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.RWHIX_SendPrescriptionCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.RWHIX_SendPrescriptionCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.RWHIX_SendPrescriptionCompletedEventArgs.TrackingCode">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.RWHIX_SendPrescriptionCompletedEventArgs.ErrorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.RWHIX_GetInvoiceCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.RWHIX_GetInvoiceCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.RWHIX_GetInvoiceCompletedEventArgs.dtHIXInvoice">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.RWHIX_GetInvoiceCompletedEventArgs.dtHIXInvoiceItem">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.RWHIX_GetInvoiceCompletedEventArgs.ErrorMessage">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.MedicalCouncil_GetPractitionerInformationCompletedEventHandler">
+<remarks/>
+</member>
+<member name="T:HIS_Tester.RWWebServices.MedicalCouncil_GetPractitionerInformationCompletedEventArgs">
+<remarks/>
+</member>
+<member name="P:HIS_Tester.RWWebServices.MedicalCouncil_GetPractitionerInformationCompletedEventArgs.Result">
+<remarks/>
+</member>
+</members>
+</doc>

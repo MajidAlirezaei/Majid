@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="HIS_Tester_RWWebServices_RWWebServices" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.110.2/RWWebServer/WebServices/RWWebServices.asmx</Value>
+    </Setting>
+    <Setting Name="HIS_Tester_PackageSenderWebService_PackageSenderWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.110.2/rwsepas02/WebServices/PackageSenderWebService.asmx</Value>
+    </Setting>
+    <Setting Name="HIS_Tester_PocsWebService_POCSWebService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.110.2/rwsepas02/WebServices/PocsWebService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
